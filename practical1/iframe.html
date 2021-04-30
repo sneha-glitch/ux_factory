@@ -6,11 +6,14 @@
         </title>
     </head>
     <body>
+        <!--iframe is an inline element and iframe is used to segment a webpage inside another webpage-->
         <iframe src="https://uxfactory.in" height ="200" width="500" style="border:2px solid hotpink"></iframe>
         <iframe src="https://indianexpress.com/" height="500" width="400" style="border:3px solid red"></iframe>
         <p> <a href="https://goggle.com">google</a></p>
-        <iframe src="https://wikipedia.com" name="wikipedia" height="500" width="800" style="border:seagreen">
+        <!-- in iframe title is used for screen reader(screen reading purpose)-->
+        <iframe src="https://wikipedia.com"  title="wikipedia" name="wikipedia" height="500" width="800" style="border:seagreen">
         </iframe>
+        <!--here  we are targeting indian express webpage into wikipedia web page and name and target should be same in oder to target the webpage-->
         <p><a href=" https://indianexpress.com" target="wikipedia" style="border:seagreen">indian express</a></p>
 
     </body>
