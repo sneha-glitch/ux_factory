@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment in javascript</title>
+    <script>
+        // function add(a, b) {
+        //     var num = document.getElementById("num1").value;
+        //     document.getElementById("num1")=num;
+        //     var num3 = document.getElementById("num2").value;
+        //     document.getElementById("num2")=num3;
+        //     var total = num + num3;
+        //     return total;
+        function add(a, b) {
+            var x = document.getElementById("num1").value;
+            //document.getElementById("num1").innerHTML = x;
+            console.log(x);
+            var y = document.getElementById("num2").value;
+            //document.getElementById("num2").innerHTML = x;
+            console.log(y);
+            var z = parseFloat(x) + parseFloat(y);
+            console.log(z);
+            document.getElementById("total").value=z;
+           // return z;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <input type="button" onclick="add()" />
+    <br>
+    <label for="num1">textbox1</label>
+    <input type="text" id="num1"/><br>
+    <label for="num2">textbox2</label>
+    <input type="text" id="num2"/><br>
+    <label for="num1">total</label>
+    <input type="text" id="sum"/><br> -->
+
+    <label for="num1" id="numb1">textbox1:</label>
+    <input type="text" id="num1" name="num1"><br>
+    <label for="num2" id="numb2">textbox2:</label>
+    <input type="text" id="num2" name="num2"><br>
+    <label for="total" id="tot">Total:</label>
+    <input type="text" id="total" name="total">
+    <button onclick="add(num1,num2)">Add</button>
+
+</body>
+
+</html>
